@@ -1,0 +1,23 @@
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%;}
+button.follow, button.unfollow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 80%;
+    left: 47%;
+    border-radius: 100%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 15px 2px black;
+}
+
+button.follow {
+  background: green;
+}
+
+button.unfollow {
+  display: none; 
+  background: red;
+}
