@@ -14,10 +14,49 @@ button.follow, button.unfollow {
 }
 
 button.follow {
-  background: green;
+    background: green;
 }
 
 button.unfollow {
-  display: none; 
-  background: red;
+    display: none; 
+    background: red;
 }
+
+.alert {
+    position: absolute;
+    display: none;
+    width: 20%;
+    left: 40%;
+    top: 10%;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 5%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.alert.waiting {
+    background: yellow;
+    -webkit-animation: fade 2s infinite;
+}
+
+.alert.error {
+    background: red;
+    color: white;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
